@@ -1,0 +1,1 @@
+// digunakan untuk mengambil data environment dari API eksternal
