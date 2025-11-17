@@ -2,7 +2,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from './layout/MainLayout.jsx';
-import { Landing, Home, About, Content, Contact} from './pages';
+import { Landing, Home, About, Content, Contact, NotFound} from './pages';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path="/content" element={<Content />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
