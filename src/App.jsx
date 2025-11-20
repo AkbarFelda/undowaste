@@ -1,4 +1,3 @@
-// src/App.jsx (PASTIKAN KODE INI BENAR)
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from './layout/MainLayout.jsx';
