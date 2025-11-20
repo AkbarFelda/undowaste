@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import MainLayout from './layout/MainLayout.jsx';
+import MainLayout from './layout/mainLayout.jsx';
 import { Landing, Home, About, Content, Contact, NotFound} from './pages';
 
 function App() {

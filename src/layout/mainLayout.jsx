@@ -8,7 +8,6 @@ function MainLayout() {
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
       <main className="flex-1 container">
-        {/* Outlet adalah tempat halaman (Home, About, dll) akan dirender */}
         <Outlet /> 
       </main>
       <Footer />
