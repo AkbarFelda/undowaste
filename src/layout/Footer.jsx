@@ -13,7 +13,7 @@ function Footer() {
         
         {/* Kolom 1: Tentang Proyek */}
         <div>
-          <h3 className="font-bold text-lg mb-4 text-green-400">EcoDigital</h3>
+          <h3 className="font-bold text-lg mb-4 text-green-400">Undowaste</h3>
           <p className="text-gray-400">
             Platform edukasi dan kontribusi lingkungan digital. 
             Dibuat untuk Lomba Web Design Technoversary {currentYear}.
@@ -24,8 +24,8 @@ function Footer() {
         <div>
           <h3 className="font-bold text-lg mb-4 text-green-400">Quick Links</h3>
           <ul className="space-y-2">
-            <li><Link to="/features" className="text-gray-400 hover:text-white">Fitur Unggulan</Link></li>
-            <li><Link to="/about" className="text-gray-400 hover:text-white">Tentang Kami</Link></li>
+            <li><Link to="/features" className="text-gray-400 hover:text-white">Tentang Kami</Link></li>
+            <li><Link to="/about" className="text-gray-400 hover:text-white">Kontak</Link></li>
             {/* <li><Link to="/pricing" className="text-gray-400 hover:text-white">Donasi</Link></li> */}
           </ul>
         </div>
@@ -33,14 +33,13 @@ function Footer() {
         {/* Kolom 3: Kontak & Sosial */}
         <div>
           <h3 className="font-bold text-lg mb-4 text-green-400">Kontak</h3>
-          <p className="text-gray-400">Email: [Email Tim Anda]</p>
-          <p className="text-gray-400 mt-2">© {currentYear} Tim [Nama Tim Anda]</p>
+          <p className="text-gray-400">Email: sk3d@example.com</p>
         </div>
 
       </div>
       
       <div className="mt-8 pt-4 border-t border-gray-700 text-center">
-         <p className="text-xs text-gray-500">Didesain dan dikembangkan dengan ReactJS & Tailwind CSS.</p>
+         <p className="text-xs text-gray-500">© {currentYear} Tim SK3D</p>
       </div>
     </footer>
   );
