@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { UndowasteLogo } from '../assets';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ function Header() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img 
-            src="src/assets/images/undowasteLogo.png" 
+            src={UndowasteLogo} 
             alt="Logo"
             className="h-auto w-auto"
           />
