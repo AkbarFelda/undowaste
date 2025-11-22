@@ -16,7 +16,7 @@ function Home() {
             limbah dan menciptakan lingkungan yang lebih bersih dan sehat.
             Setiap tindakan kecil berdampak besar bagi bumi
           </p>
-          <button className="bg-black text-white py-4 px-14 rounded-lg font-bold shadow-lg hover:bg-gray-800 transition duration-300">
+          <button className="bg-black text-white py-4 px-14 rounded-4xl font-bold shadow-lg hover:bg-gray-800 transition duration-300">
             Bergabung Sekarang
           </button>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 // IMPORT UTAMA: Komponen untuk merender ikon
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function BackButton() {
@@ -15,11 +15,9 @@ function BackButton() {
       onClick={handleGoBack}
       className="mt-4 px-6 py-2 bg-white text-background-notfound rounded-full font-bold shadow-lg flex items-center gap-2 z-10 hover:bg-gray-100 transition duration-300"
     >
-      {/* Ganti text-white dengan text-background-notfound agar warna ikon terlihat 
-          (karena latar belakang tombol adalah putih) */}
-      <FontAwesomeIcon 
-        icon={faArrowLeft} 
-        className="text-background-notfound text-base" 
+      <FontAwesomeIcon
+        icon={faArrowLeft}
+        className="text-background-notfound text-base"
       />
       Kembali
     </button>
