@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div className="p-8 bg-gray-50 min-h-full">
+    <div className=" bg-white min-h-full">
       <h1 className="text-4xl font-extrabold text-green-700 mb-6">
         Ini adalah Halaman Home
       </h1>
