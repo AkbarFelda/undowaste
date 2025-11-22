@@ -1,7 +1,7 @@
 import BlobL from './icons/BlobL.svg';
 import BlobR from './icons/BlobR.svg';
 import Icon404 from './icons/404.svg';
-import UndowasteLogo from './icons/undowasteLogo.svg';
+import UndowasteLogo from './icons/UndowasteLogo.svg';
 
 
 export { 
