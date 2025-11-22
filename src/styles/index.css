@@ -31,3 +31,7 @@ html, body, #root {
   --color-background-notfound: #015238;
 }
 
+.svg-filter {
+  filter: invert(1) brightness(100%) contrast(100%);
+}
+
