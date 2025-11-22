@@ -10,13 +10,7 @@ function Header() {
   const currentPath = location.pathname;
 
   return (
-    // 1. Terapkan padding horizontal default (mobile first)
-    // 2. Ganti lg:pl-12 lg:pr-12 dengan lg:px-[66px] jika ingin presisi 66px di desktop
-    //    Saat ini saya ganti ke px-4 (16px) untuk mobile agar tidak terlalu rapat.
     <header className="bg-white px-4 lg:px-[66px] shadow-md sticky top-0 z-20 ">
-      {/* 3. Hapus lg:p-4 di sini, dan ganti dengan py-3/py-4 untuk padding vertikal konsisten.
-        Padding horizontal sudah ditangani oleh elemen <header> di atas.
-      */}
       <div className="container mx-auto flex justify-between items-center py-3">
         <Link to="/" className="flex items-center gap-2">
           <img src={UndowasteLogo} alt="Logo" className="h-auto w-auto" />
@@ -54,7 +48,6 @@ function Header() {
               key={link.to}
               to={link.to}
               onClick={handleClose}
-              // Tambahkan px-4 di sini agar menu mobile juga memiliki padding horizontal
               className={`px-4 py-3 text-sm transition ${
                 currentPath === link.to
                   ? "text-black hover:bg-gray-100"
