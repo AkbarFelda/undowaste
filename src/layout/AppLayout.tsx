@@ -9,7 +9,7 @@ function AppLayout({
 }) {
   return (
     <div
-      className={`container mx-auto lg:px-[66px] lg:py-[31px] p-4 ${className}`}
+      className={`container mx-auto px-4 lg:px-[66px] lg:py-[31px] ${className}`}
     >
       {children}
     </div>
