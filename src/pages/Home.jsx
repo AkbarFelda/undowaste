@@ -1,5 +1,9 @@
 import React from "react";
 import { TrashHero } from "../assets";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash, faRecycle } from "@fortawesome/free-solid-svg-icons";
+import { faEarthAsia } from "@fortawesome/free-solid-svg-icons";
+ 
 
 function Home() {
   return (
@@ -31,7 +35,48 @@ function Home() {
             />
           </div>
         </div>
+        <div className="py-12 lg:py-20">
+        {/* Konten ini diwariskan container dan mx-auto dari MainLayout/AppLayout */}
+        <div className="container mx-auto px-4 md:px-8 lg:px-[66px] text-center">
+          
+          <h2 className="text-3xl lg:text-4xl font-extrabold font-primary text-black mb-12">
+            Edukasi Sampah
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+            
+            {/* Kolom 1: Jenis Sampah */}
+            <div className="p-4">
+              <FontAwesomeIcon icon={faTrash} className="text-black text-4xl mb-4" />
+              <h3 className="text-xl font-bold text-black mb-2">Jenis Sampah</h3>
+              <p className="text-gray-600 text-sm mx-auto max-w-xs">
+                Kenali perbedaan antara sampah organik, anorganik, dan B3 untuk pengelolaan yang tepat
+              </p>
+            </div>
+
+            {/* Kolom 2: Proses Daur Ulang */}
+            <div className="p-4">
+              <FontAwesomeIcon icon={faRecycle} className="text-black text-4xl mb-4" />
+              <h3 className="text-xl font-bold text-black mb-2">Proses Daur Ulang</h3>
+              <p className="text-gray-600 text-sm mx-auto max-w-xs">
+                Pelajari cara sampah diproses dan diolah kembali menjadi bahan baku yang berguna
+              </p>
+            </div>
+
+            {/* Kolom 3: Dampak Lingkungan */}
+            <div className="p-4">
+              <FontAwesomeIcon icon={faEarthAsia} className="text-black text-4xl mb-4" />
+              <h3 className="text-xl font-bold text-black mb-2">Dampak Lingkungan</h3>
+              <p className="text-gray-600 text-sm mx-auto max-w-xs">
+                Pahami konsekuensi serius dari pencemaran sampah terhadap ekosistem dan kesehatan kita
+              </p>
+            </div>
+
+          </div>
+        </div>
       </div>
+      </div>
+      
   );
 }
 
