@@ -3,29 +3,35 @@ import { TrashHero } from "../assets";
 
 function Home() {
   return (
-    <div className="bg-white min-h-full py-12 lg:py-20">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="text-center lg:text-left">
-          <h1 className="text-4xl lg:text-6xl font-extrabold font-primary text-black mb-6 leading-tight">
-            Gabung Gerakan,
-            <br />
-            Bersih Bersama
-          </h1>
-          <p className="text-black font-medium text-xl mb-10 font-secondary max-w-xl lg:mx-0 text-left">
-            Bergabunglah dengan ribuan orang lainnya dalam misi untuk mengurangi
-            limbah dan menciptakan lingkungan yang lebih bersih dan sehat.
-            Setiap tindakan kecil berdampak besar bagi bumi
-          </p>
-          <button className="bg-black text-white py-4 px-14 rounded-4xl font-bold shadow-lg hover:bg-gray-800 transition duration-300">
-            Bergabung Sekarang
-          </button>
-        </div>
-        <div className="flex justify-center lg:justify-end mt-10 lg:mt-0">
-          <img src={TrashHero} alt="Logo" className="h-auto w-auto" />
-          <div className="w-full max-w-lg"></div>
+      <div className="min-h-full py-12 lg:py-20 relative">
+        <div className="flex flex-col md:flex-row gap-10 items-start w-full relative z-10">
+          <div className="text-center md:text-left order-2 md:order-1 w-full md:w-3/5 self-start">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold font-primary text-black mb-6 leading-tight">
+              Gabung&nbsp;Gerakan,
+              <br />
+              Bersih&nbsp;Bersama
+            </h1>
+
+            <p className="text-black font-medium text-lg sm:text-xl mb-10 font-secondary max-w-xs mx-auto md:max-w-none md:mx-0 text-center md:text-left">
+              Bergabunglah dengan ribuan orang lainnya dalam misi untuk
+              mengurangi limbah dan menciptakan lingkungan yang lebih bersih dan
+              sehat. Setiap tindakan kecil berdampak besar bagi bumi
+            </p>
+
+            <button className="bg-black text-white font-bold rounded-3xl shadow-lg transition duration-300 hover:opacity-80 py-3 px-8 text-base sm:py-4 sm:px-10 sm:text-lg md:py-2 md:px-4 md:text-base lg:py-4 lg:px-10 lg:text-xl">
+              Bergabung Sekarang
+            </button>
+          </div>
+
+          <div className="flex justify-center mt-10 order-1 md:order-2 w-full md:w-2/5 self-start translate-y-8 md:translate-y-0 lg:translate-y-8 ">
+            <img
+              src={TrashHero}
+              alt="ImageHero"
+              className="w-full max-w-sm md:w-[450px] md:mt-16 lg:w-[700px] md:-translate-x-8 lg:translate-x-15"
+            />
+          </div>
         </div>
       </div>
-    </div>
   );
 }
 
