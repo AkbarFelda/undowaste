@@ -5,31 +5,45 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { UndowasteLogo } from "../assets";
 import { useHeaderLogic } from "../hooks/useHeaderLogic";
 
-function Header() {
+function Header({ isLanding = false }) {
   const { isOpen, location, navLinks, handleToggle, handleClose } = useHeaderLogic();
   const currentPath = location.pathname;
 
   return (
     <header className="bg-white px-4 lg:px-[66px] shadow-md sticky top-0 z-20 ">
       <div className="container mx-auto flex justify-between items-center py-3">
+ 
         <Link to="/" className="flex items-center gap-2">
           <img src={UndowasteLogo} alt="Logo" className="h-auto w-auto" />
         </Link>
-        <nav className="hidden md:flex gap-6">
-          {navLinks.map((link) => (
+
+        {!isLanding ? (
+          <nav className="hidden md:flex gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`font-medium transition ${
+                  currentPath === link.to
+                    ? "text-black"
+                    : "text-gray-700 hover:font-bold"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        ) : (
+          <div className="hidden md:flex">
             <Link
-              key={link.to}
-              to={link.to}
-              className={`font-medium transition ${
-                currentPath === link.to
-                  ? "text-black"
-                  : "text-gray-700 hover:font-bold"
-              }`}
+              to="/community"
+              className="bg-black text-white px-6 py-2 rounded-xl font-semibold shadow hover:opacity-80 transition"
             >
-              {link.label}
+              Gabung Komunitas
             </Link>
-          ))}
-        </nav>
+          </div>
+        )}
+
         <button
           className="md:hidden text-2xl text-gray-700"
           onClick={handleToggle}
@@ -42,22 +56,34 @@ function Header() {
           isOpen ? "max-h-60" : "max-h-0"
         }`}
       >
-        <nav className="flex flex-col py-2">
-          {navLinks.map((link) => (
+        {!isLanding ? (
+          <nav className="flex flex-col py-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={handleClose}
+                className={`px-4 py-3 text-sm transition ${
+                  currentPath === link.to
+                    ? "text-black hover:bg-gray-100"
+                    : "text-gray-700 hover:bg-gray-100"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        ) : (
+          <div className="py-3 px-4">
             <Link
-              key={link.to}
-              to={link.to}
+              to="/community"
               onClick={handleClose}
-              className={`px-4 py-3 text-sm transition ${
-                currentPath === link.to
-                  ? "text-black hover:bg-gray-100"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`}
+              className="block w-full text-center bg-black text-white py-3 rounded-xl font-semibold shadow hover:opacity-80 transition"
             >
-              {link.label}
+              Gabung Komunitas
             </Link>
-          ))}
-        </nav>
+          </div>
+        )}
       </div>
     </header>
   );
