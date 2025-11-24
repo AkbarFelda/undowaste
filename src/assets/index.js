@@ -6,6 +6,12 @@ import TrashHero from './images/trash.svg';
 import TrashIcon from './icons/Trash.svg';
 import RecycleIcon from './icons/Recycle.svg';
 import EarthIcon from './icons/Earth.svg';
+import Profil1 from './images/profil1.png';
+import Profil2 from './images/profil2.png';
+import Profil3 from './images/profil3.png';
+import Profil4 from './images/profil4.png';
+import Profil5 from './images/profil5.png';
+import Profil6 from './images/profil6.png';
 
 
 export { 
@@ -16,5 +22,11 @@ export {
   TrashHero,
   TrashIcon,
   RecycleIcon,
-  EarthIcon
+  EarthIcon,
+  Profil1,
+  Profil2,
+  Profil3,
+  Profil4,
+  Profil5,
+  Profil6
 };
