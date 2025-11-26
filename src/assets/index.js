@@ -31,13 +31,11 @@ export {
   Icon404,
   UndowasteLogo,
   TrashHero,
-
   Bottle,
   Edukasi,
   Keberlanjutan,
   Kolaborasi,
-  Magnifier
-
+  Magnifier,
   TrashIcon,
   RecycleIcon,
   EarthIcon,
