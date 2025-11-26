@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { TrashHero, TrashIcon, RecycleIcon, EarthIcon, Profil1, Profil2, Profil3, Profil4, Profil5, Profil6 } from "../assets";
 import Header from "../layout/Header";
+import Footer from "../layout/Footer";
+import { TestimonialSlider } from "../components";
 
 function Landing() {
   const navigate = useNavigate();
@@ -139,8 +141,13 @@ function Landing() {
               Segera Gabung Komunitas
             </button>
           </div>
+          
         </div>
       </div>
+      <div className="bg-white">
+      <TestimonialSlider />
+      </div>
+      <Footer/>
     </>
   );
 }
