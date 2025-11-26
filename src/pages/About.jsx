@@ -7,7 +7,7 @@ import { Magnifier } from '../assets';
 
 function About() {
   return (
-    <div className="min-h-full py-3 lg:py-5 relative justify-center mb-20">
+    <div className="min-h-full py-3 relative justify-center mb-20 container mx-auto px-4 lg:px-[66px] lg:py-[31px]">
         <div className='text-center md:text-left order-2 md:order-1 w-full md:w-3/5 self-start'>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold font-primary text-black mb-6 leading-tight">
             About
