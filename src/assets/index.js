@@ -3,13 +3,11 @@ import BlobR from './icons/BlobR.svg';
 import Icon404 from './icons/404.svg';
 import UndowasteLogo from './icons/UndowasteLogo.svg';
 import TrashHero from './images/trash.svg';
-
 import Bottle from './images/bottle.svg';
 import Edukasi from './images/edukasi.svg';
 import Keberlanjutan from './images/keberlanjutan.svg';
 import Kolaborasi from './images/kolaborasi.svg';
 import Magnifier from './images/magnifier.svg'; 
-
 import TrashIcon from './icons/Trash.svg';
 import RecycleIcon from './icons/Recycle.svg';
 import EarthIcon from './icons/Earth.svg';
@@ -20,7 +18,7 @@ import Profil4 from './images/profil4.png';
 import Profil5 from './images/profil5.png';
 import Profil6 from './images/profil6.png';
 import HomeHero from './images/HomeHero.png';
-import Bottle from './images/Bottle-Photoroom.svg';
+import BottleHalf from './images/Bottle-Photoroom.svg';
 import LeafIcon from './icons/leaf.svg';
 import WasteIcon from './icons/Hazardous_Waste.svg';
 import BottleIcon from './icons/bottle.svg';
@@ -31,13 +29,11 @@ export {
   Icon404,
   UndowasteLogo,
   TrashHero,
-
-  Bottle,
+  BottleHalf,
   Edukasi,
   Keberlanjutan,
   Kolaborasi,
-  Magnifier
-
+  Magnifier,
   TrashIcon,
   RecycleIcon,
   EarthIcon,
