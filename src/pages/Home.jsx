@@ -1,7 +1,6 @@
 import React from "react";
 import {
   HomeHero,
-  Bottle,
   LeafIcon,
   BottleIcon,
   WasteIcon,
@@ -11,6 +10,7 @@ import {
   Profil4,
   Profil5,
   Profil6,
+  BottleHalf,
 } from "../assets";
 import { WasteTypeCard, JoinCommunitySection } from "../components";
 
@@ -60,7 +60,7 @@ function Home() {
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
               <div className="w-full lg:w-2/5 flex justify-center relative h-[350px] lg:h-[450px]">
                 <img
-                  src={Bottle}
+                  src={BottleHalf}
                   alt="Bottle illustration"
                   className="w-full max-w-xs lg:max-w-none object-contain  scale-[1.5] lg:scale-[1.8] z-10"
                 />
