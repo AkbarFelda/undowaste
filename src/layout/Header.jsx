@@ -6,7 +6,7 @@ import { UndowasteLogo } from "../assets";
 import { useHeaderLogic } from "../hooks/useHeaderLogic";
 
 function Header({ isLanding = false }) {
-  const { isOpen, location, navLinks, handleToggle, handleClose } = useHeaderLogic();
+  const { isOpen, location, navLinks, handleToggle, handleClose, handleJoinClick } = useHeaderLogic();
   const currentPath = location.pathname;
 
   return (
@@ -36,7 +36,7 @@ function Header({ isLanding = false }) {
         ) : (
           <div className="hidden md:flex">
             <Link
-              to="/community"
+              onClick={handleJoinClick}
               className="bg-black text-white px-6 py-2 rounded-xl font-semibold shadow hover:opacity-80 transition"
             >
               Gabung Komunitas
@@ -51,7 +51,7 @@ function Header({ isLanding = false }) {
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
       </div>
-      <div
+    <div
         className={`md:hidden bg-white border-t overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-60" : "max-h-0"
         }`}

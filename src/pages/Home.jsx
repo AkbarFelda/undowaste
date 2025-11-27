@@ -17,8 +17,11 @@ import { WasteTypeCard, JoinCommunitySection } from "../components";
 function Home() {
   const profileImages = [Profil1, Profil2, Profil3, Profil4, Profil5, Profil6];
   const handleJoinClick = () => {
-    alert("Mengarah ke halaman pendaftaran komunitas!");
+    window.open("https://chat.whatsapp.com/HxzzkSXHZNo8vjWHKYfGN6");
   };
+  const handleLearnMoreClick = () => {
+    window.location.href = "/content";
+  }
   return (
     <>
       <div className="relative z-10 py-12 lg:py-10 lg:ml-15 lg:mr-16 md:ml-8">
@@ -42,24 +45,23 @@ function Home() {
               menjadi langkah kecil menuju masa depan yang lebih hijau.
             </p>
 
-            <button className="bg-black text-white font-bold rounded-full shadow-lg transition duration-300 hover:opacity-80 py-3 px-8">
+            <button onClick={handleLearnMoreClick} className="bg-black text-white font-bold rounded-full shadow-lg transition duration-300 hover:opacity-80 py-3 px-8">
               Pelajari Lebih Jauh
             </button>
           </div>
         </div>
         <div className="text-center md:ml-5 items-center py-12">
-          {/* vISI MISI */}
           <h1 className="text-black text-3xl font-medium font-primary">
             Tentang Gerakan Hijau
           </h1>
-          <p className="text-black font-secondary font-medium text-xl max-w-4xl mx-auto mt-4">
+          <p className="text-black font-secondary font-medium text-xl max-w-4xl mx-auto mt-4 p-2">
             Kami adalah inisiatif yang lahir dari kepedulian terhadap krisis
             limbah nasional. Kami percaya, solusi terbaik adalah edukasi yang
             mudah diakses dan aksi nyata di tingkat individu.
           </p>
 
-          <div className="relative w-full max-w-[1400px] mx-auto my-12 md:my-12 ">
-            <div className="bg-white  shadow-2xl rounded-3xl p-8 md:p-12 border border-gray-100 relative overflow-hidden">
+          <div className="relative w-full max-w-[1400px] mx-auto my-12 md:my-12 content-center ">
+            <div className="bg-white shadow-2xl rounded-3xl p-8 md:p-12 border border-gray-100 relative overflow-hidden">
               <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
                 <div className="w-full lg:w-2/5 flex justify-center relative h-[350px] lg:h-[450px]">
                   <img
@@ -133,7 +135,7 @@ function Home() {
               />
             </div>
           </div>
-          <div className="mt-16 px-4">
+          <div className="py-16 px-4">
             <JoinCommunitySection
               profileImages={profileImages}
               memberCount="100+"

@@ -19,8 +19,11 @@ import { TestimonialSlider, JoinCommunitySection } from "../components";
 function Landing() {
   const profileImages = [Profil1, Profil2, Profil3, Profil4, Profil5, Profil6];
   const handleJoinClick = () => {
-    alert("Mengarah ke halaman pendaftaran komunitas!");
-  };
+  window.open(
+    "https://chat.whatsapp.com/HxzzkSXHZNo8vjWHKYfGN6",
+  );
+};
+
   const navigate = useNavigate();
   const handleEnterWebsite = () => {
     navigate("/home");
@@ -39,7 +42,7 @@ function Landing() {
                 Bersih Bersama
               </h1>
 
-              <p className="text-black font-medium text-lg sm:text-xl mb-10 font-secondary max-w-xs mx-auto md:max-w-none md:mx-0 text-center md:text-left ml-0 sm:ml-4 md:ml-4">
+              <p className="text-black font-medium text-lg sm:text-xl mb-10 font-secondary max-w-xs mx-auto md:max-w-none md:mx-0 text-center md:text-left sm:ml-4 md:ml-4">
                 Bergabunglah dengan ribuan orang lainnya dalam misi untuk
                 mengurangi limbah dan menciptakan lingkungan yang lebih bersih
                 dan sehat. Setiap tindakan kecil berdampak besar bagi bumi.
@@ -112,7 +115,7 @@ function Landing() {
               </div>
             </div>
           </div>
-          <div className="mt-16 px-4">
+          <div className="px-4">
             <JoinCommunitySection
               profileImages={profileImages}
               memberCount="100+"
