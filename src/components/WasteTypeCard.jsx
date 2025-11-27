@@ -4,7 +4,7 @@ const WasteTypeCard = ({ icon: Icon, title, description, className = "" }) => {
   return (
     <div
       className={`
-        flex flex-col items-center text-center p-6 sm:p-12
+        flex flex-col items-center text-center p-6 sm:p-12 md:p-5
         bg-white rounded-3xl shadow-lg border border-gray-100 
         max-w-xs mx-auto h-full ${className}
     `}
