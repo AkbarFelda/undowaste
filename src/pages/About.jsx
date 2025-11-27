@@ -8,15 +8,22 @@ import { Magnifier } from '../assets';
 function About() {
   return (
     <div className="min-h-full py-3 relative justify-center mb-20 container mx-auto px-4 lg:px-[66px] lg:py-[31px]">
-        <div className='text-center md:text-left order-2 md:order-1 w-full md:w-3/5 self-start'>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold font-primary text-black mb-6 leading-tight">
-            About
-            <br />
-            Undowaste
-            </h1>
-          <p className="text-black font-medium text-lg sm:text-xl w-4/5 mb-10 font-secondary max-w-xs mx-auto md:max-w-none md:mx-0 text-center md:text-left">
-            Undowaste adalah sebuah gerakan sosial dan platform komunitas yang berdedikasi untuk mengatasi masalah sampah di Indonesia. Kami percaya bahwa perubahan besar dimulai dari langkah kecil setiap individu. Melalui edukasi, kolaborasi, dan aksi nyata. Kami mengajak masyarakat untuk lebih bijak dalam mengelola sampah, mengurangi limbah, dan menciptakan lingkungan yang lebih bersih dan lestari untuk generasi mendatang.
-          </p>
+        <div className='text-center md:text-left order-2 md:order-1 w-full self-start flex flex-col md:flex-row items-center'>
+          <div>
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold font-primary text-black mb-6 leading-tight">
+              About
+              <br />
+              Undowaste
+              </h1>
+            <p className="text-black font-medium text-lg sm:text-xl w-4/5 mb-10 font-secondary max-w-xs mx-auto md:max-w-none md:mx-0 text-center md:text-left">
+              Undowaste adalah sebuah gerakan sosial dan platform komunitas yang berdedikasi untuk mengatasi masalah sampah di Indonesia. Kami percaya bahwa perubahan besar dimulai dari langkah kecil setiap individu. Melalui edukasi, kolaborasi, dan aksi nyata. Kami mengajak masyarakat untuk lebih bijak dalam mengelola sampah, mengurangi limbah, dan menciptakan lingkungan yang lebih bersih dan lestari untuk generasi mendatang.
+            </p>
+          </div>
+          <img 
+            src={Bottle} 
+            alt="Bottle" 
+            className="w-full max-w-sm md:max-w-md p-6 md:p-0 md:ml-20 md:mr-0 mb-6 md:mb-0"
+          />
         </div>
 
         <div className="flex flex-col items-center relative md:flex-row bg-[#F6F8F9] rounded-[50px] justify-between w-full">
