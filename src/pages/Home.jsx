@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   HomeHero,
   LeafIcon,
@@ -15,16 +16,18 @@ import {
 import { WasteTypeCard, JoinCommunitySection } from "../components";
 
 function Home() {
+  const navigate = useNavigate();
   const profileImages = [Profil1, Profil2, Profil3, Profil4, Profil5, Profil6];
   const handleJoinClick = () => {
     window.open("https://chat.whatsapp.com/HxzzkSXHZNo8vjWHKYfGN6");
   };
+
   const handleLearnMoreClick = () => {
-    window.location.href = "/content";
-  }
+    navigate("/content"); 
+  };
   return (
     <>
-      <div className="relative z-10 py-12 lg:py-10 lg:ml-15 lg:mr-16 md:ml-8">
+      <div className="relative z-10 py-12 lg:py-10 lg:ml-8 lg:mr-16 md:ml-8">
         <div
           className="hero-bg bg-no-repeat relative flex items-center "
           style={{
@@ -33,7 +36,7 @@ function Home() {
             backgroundSize: "70%",
           }}
         >
-          <div className="relative z-10  max-w-4xl text-center lg:text-left md:text-left">
+          <div className="relative z-10  max-w-4xl text-center px-8 lg:text-left md:text-left">
             <h1 className="text-5xl sm:text-6xl lg:text-8xl font-semibold font-primary text-black mb-4 leading-tight">
               Undo Your
               <br />
@@ -45,7 +48,10 @@ function Home() {
               menjadi langkah kecil menuju masa depan yang lebih hijau.
             </p>
 
-            <button onClick={handleLearnMoreClick} className="bg-black text-white font-bold rounded-full shadow-lg transition duration-300 hover:opacity-80 py-3 px-8">
+            <button
+              onClick={handleLearnMoreClick}
+              className="bg-black text-white font-bold rounded-full shadow-lg transition duration-300 hover:opacity-80 py-3 px-8"
+            >
               Pelajari Lebih Jauh
             </button>
           </div>
@@ -54,7 +60,7 @@ function Home() {
           <h1 className="text-black text-3xl font-medium font-primary">
             Tentang Gerakan Hijau
           </h1>
-          <p className="text-black font-secondary font-medium text-xl max-w-4xl mx-auto mt-4 p-2">
+          <p className="text-black font-secondary font-medium text-lg max-w-4xl mx-auto mt-4 p-2">
             Kami adalah inisiatif yang lahir dari kepedulian terhadap krisis
             limbah nasional. Kami percaya, solusi terbaik adalah edukasi yang
             mudah diakses dan aksi nyata di tingkat individu.
