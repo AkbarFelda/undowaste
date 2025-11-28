@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../layout/Footer";
-import { Phone, Map, Bottle, TrueReality } from "../assets";
+import { Map } from "../assets";
 import { Doughnut, Bar } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement } from "chart.js";
 
@@ -42,10 +42,10 @@ const WasteTracker = () => {
 
             <div className="md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
                 <div className="w-full md:w-1/3">
-                    <h1 className="text-5xl LeagueSpartanSemiBold text-black leading-tight">
+                    <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4 leading-tight">
                         Waste <br /> Tracker
                     </h1>
-                    <p className="mt-4 text-black font-PoppinsMedium">
+                    <p className="mt-4 text-black font-poppinsmedium">
                         Jangan hanya membuang, saat nya melacak! Saksikan langsung peta aliran limbah mu, sekaligus liat data category limbah terbanyak!
                     </p>
                 </div>
@@ -82,7 +82,7 @@ const WasteTracker = () => {
             </div>
 
             <div className="bg-white shadow-md rounded-[45px] p-10">
-                    <h2 className="text-center font-LeagueSpartanMedium text-4xl text-black mb-6">Waste Category Distribution</h2>
+                    <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Waste Category Distribution</h2>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-10">
                         <div className="w-60 md:w-72">
@@ -97,7 +97,7 @@ const WasteTracker = () => {
                         />
                         </div>
                         
-                        <ul className="space-y-2 text-black text-sm font-PoppinsMedium">
+                        <ul className="space-y-2 text-black text-sm font-poppinsmedium">
                             <li><span className="inline-block w-4 h-4 bg-[#71B469] mr-2"></span> Limbah Rumah Tangga</li>
                             <li><span className="inline-block w-4 h-4 bg-[#63ABD2] mr-2"></span> Limbah Industri</li>
                             <li><span className="inline-block w-4 h-4 bg-[#655C5C] mr-2"></span> Limbah Pertanian</li>
@@ -108,7 +108,7 @@ const WasteTracker = () => {
             </div>
 
             <div className="bg-white shadow-md rounded-[45px] p-10">
-                <h2 className="text-center font-LeagueSpartanMedium text-4xl text-black mb-6">Weekly Waste</h2>
+                <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Weekly Waste</h2>
 
                 <Bar data={barData} />
             </div>

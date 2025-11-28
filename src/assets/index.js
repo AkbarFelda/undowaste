@@ -20,6 +20,11 @@ import Earth from './images/earth.svg';
 import TrueReality from './images/true-reality.png'
 import Boxes from './images/boxes.svg';
 import Phone from './images/phone.svg';
+import Daun from './images/daun.svg';
+import Detergent from './images/detergent.svg';
+import Hape from './images/hape.svg';
+import Kursi from './images/kursi.svg';
+import Tong from './images/tong.svg';
 
 //icon
 import LeafIcon from './icons/leaf.svg';
@@ -66,5 +71,10 @@ export {
   Earth,
   TrueReality,
   Boxes,
-  Phone
+  Phone,
+  Daun,
+  Detergent,
+  Hape,
+  Kursi,
+  Tong
 };
