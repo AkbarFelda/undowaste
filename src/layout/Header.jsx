@@ -6,7 +6,7 @@ import { UndowasteLogo } from "../assets";
 import { useHeaderLogic } from "../hooks/useHeaderLogic";
 
 function Header({ isLanding = false }) {
-  const { isOpen, location, navLinks, handleToggle, handleClose } = useHeaderLogic();
+  const { isOpen, location, navLinks, handleToggle, handleClose, handleJoinClick } = useHeaderLogic();
   const currentPath = location.pathname;
 
   return (
@@ -36,8 +36,8 @@ function Header({ isLanding = false }) {
         ) : (
           <div className="hidden md:flex">
             <Link
-              to="/community"
-              className="bg-black text-white px-6 py-2 rounded-xl font-semibold shadow hover:opacity-80 transition"
+              onClick={handleJoinClick}
+              className="bg-black text-white px-6 py-2 rounded-xl font-poppinssemibold shadow hover:opacity-80 transition"
             >
               Gabung Komunitas
             </Link>
@@ -51,7 +51,7 @@ function Header({ isLanding = false }) {
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
       </div>
-      <div
+    <div
         className={`md:hidden bg-white border-t overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-60" : "max-h-0"
         }`}
@@ -65,8 +65,8 @@ function Header({ isLanding = false }) {
                 onClick={handleClose}
                 className={`px-4 py-3 text-sm transition ${
                   currentPath === link.to
-                    ? "text-black hover:bg-gray-100"
-                    : "text-gray-700 hover:bg-gray-100"
+                    ? "text-black hover:bg-gray-100 font-poppinssemibold"
+                    : "text-gray-700 hover:bg-gray-100 font-poppinsmedium"
                 }`}
               >
                 {link.label}
@@ -78,7 +78,7 @@ function Header({ isLanding = false }) {
             <Link
               to="/community"
               onClick={handleClose}
-              className="block w-full text-center bg-black text-white py-3 rounded-xl font-semibold shadow hover:opacity-80 transition"
+              className="block w-full text-center bg-black text-white py-3 rounded-xl font-poppinssemibold shadow hover:opacity-80 transition"
             >
               Gabung Komunitas
             </Link>

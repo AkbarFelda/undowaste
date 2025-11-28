@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   HomeHero,
   LeafIcon,
@@ -15,13 +16,18 @@ import {
 import { WasteTypeCard, JoinCommunitySection } from "../components";
 
 function Home() {
+  const navigate = useNavigate();
   const profileImages = [Profil1, Profil2, Profil3, Profil4, Profil5, Profil6];
   const handleJoinClick = () => {
-    alert("Mengarah ke halaman pendaftaran komunitas!");
+    window.open("https://chat.whatsapp.com/HxzzkSXHZNo8vjWHKYfGN6");
+  };
+
+  const handleLearnMoreClick = () => {
+    navigate("/content"); 
   };
   return (
     <>
-      <div className="relative z-10 py-12 lg:py-10 lg:ml-15 lg:mr-16 md:ml-8">
+      <div className="relative z-10 py-12 lg:py-10 lg:ml-8 lg:mr-16 md:ml-8">
         <div
           className="hero-bg bg-no-repeat relative flex items-center "
           style={{
@@ -30,36 +36,38 @@ function Home() {
             backgroundSize: "70%",
           }}
         >
-          <div className="relative z-10  max-w-4xl text-center lg:text-left md:text-left">
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-semibold font-primary text-black mb-4 leading-tight">
+          <div className="relative z-10  max-w-4xl text-center px-8 lg:text-left md:text-left">
+            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4 leading-tight">
               Undo Your
               <br />
               Waste
             </h1>
 
-            <p className="text-black font-medium text-lg sm:text-xl mb-10 max-w-sm font-secondary mx-auto lg:mx-0">
+            <p className="text-black font-poppinsmedium text-lg sm:text-xl mb-10 max-w-sm mx-auto lg:mx-0">
               Bersama UndoWaste, kami memulihkan dan mengubah setiap limbah
               menjadi langkah kecil menuju masa depan yang lebih hijau.
             </p>
 
-            <button className="bg-black text-white font-bold rounded-full shadow-lg transition duration-300 hover:opacity-80 py-3 px-8">
+            <button
+              onClick={handleLearnMoreClick}
+              className="bg-black text-white font-poppinsregular rounded-full shadow-lg transition duration-300 hover:opacity-80 py-3 px-8"
+            >
               Pelajari Lebih Jauh
             </button>
           </div>
         </div>
         <div className="text-center md:ml-5 items-center py-12">
-          {/* vISI MISI */}
-          <h1 className="text-black text-3xl font-medium font-primary">
+          <h1 className="text-black text-3xl font-leaguespartanmedium">
             Tentang Gerakan Hijau
           </h1>
-          <p className="text-black font-secondary font-medium text-xl max-w-4xl mx-auto mt-4">
+          <p className="text-black font-poppinsmedium text-lg max-w-4xl mx-auto mt-4 p-2">
             Kami adalah inisiatif yang lahir dari kepedulian terhadap krisis
             limbah nasional. Kami percaya, solusi terbaik adalah edukasi yang
             mudah diakses dan aksi nyata di tingkat individu.
           </p>
 
-          <div className="relative w-full max-w-[1400px] mx-auto my-12 md:my-12 ">
-            <div className="bg-white  shadow-2xl rounded-3xl p-8 md:p-12 border border-gray-100 relative overflow-hidden">
+          <div className="relative w-full max-w-[1400px] mx-auto my-12 md:my-12 content-center ">
+            <div className="bg-white shadow-2xl rounded-3xl p-8 md:p-12 border border-gray-100 relative overflow-hidden">
               <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
                 <div className="w-full lg:w-2/5 flex justify-center relative h-[350px] lg:h-[450px]">
                   <img
@@ -71,8 +79,8 @@ function Home() {
 
                 <div className="w-full lg:w-3/5 text-black text-left space-y-8 lg:space-y-12 py-4">
                   <section>
-                    <h1 className="text-4xl font-extrabold mb-4">Our Vision</h1>
-                    <ul className="list-disc pl-6 font-secondary text-lg space-y-3">
+                    <h1 className="text-4xl font-leaguespartanmedium mb-4">Our Vision</h1>
+                    <ul className="list-disc pl-6 font-poppinsmedium text-lg space-y-3">
                       <li>
                         Menyajikan konten edukasi yang mudah dicerna,
                         inspiratif, pemilihan sampah daur ulang, dan
@@ -87,10 +95,10 @@ function Home() {
                   </section>
 
                   <section>
-                    <h1 className="text-4xl font-extrabold mb-4">
+                    <h1 className="text-4xl font-leaguespartanmedium mb-4">
                       Our Mission
                     </h1>
-                    <ul className="list-disc pl-6 font-secondary text-lg space-y-3">
+                    <ul className="list-disc pl-6 font-poppinsmedium text-lg space-y-3">
                       <li>
                         Menjadi katalisator utama dalam mewujudkan Indonesia
                         bebas sampah.
@@ -107,7 +115,7 @@ function Home() {
             </div>
           </div>
           <div className="text-black mt-16 px-4">
-            <h1 className="font-primary font-medium text-3xl mb-8">
+            <h1 className="font-leaguespartanmedium text-3xl mb-8">
               Kenali Jenis Limbahmu
             </h1>
 
@@ -133,7 +141,7 @@ function Home() {
               />
             </div>
           </div>
-          <div className="mt-16 px-4">
+          <div className="py-16 px-4">
             <JoinCommunitySection
               profileImages={profileImages}
               memberCount="100+"
