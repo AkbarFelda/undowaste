@@ -30,7 +30,7 @@ const WasteInsight = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl shadow p-8 flex flex-col md:flex-row items-center gap-10">
+          <div className="bg-white rounded-3xl md:rounded-[45px] shadow p-8 flex flex-col md:flex-row items-center gap-10">
             <img src={Lamp} alt="Lightbulb" className="w-40 md:w-1/2" />
             <div className="flex-1">
               <h2 className="text-3xl md:text-6xl font-leaguespartanmedium mb-3">Do You<br />Know?</h2>
@@ -43,7 +43,7 @@ const WasteInsight = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl shadow p-8 flex flex-col md:flex-row items-center gap-10">
+          <div className="bg-white rounded-3xl md:rounded-[45px] shadow p-8 flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
               <h2 className="text-3xl md:text-6xl font-leaguespartanmedium mb-3">Why It Matters?</h2>
               <p className="text-sm md:text-xl text-justify leading-tight md:leading-10 font-poppinsmedium text-black">
@@ -57,7 +57,7 @@ const WasteInsight = () => {
             <img src={Question} alt="Question Illustration" className="w-40 md:w-2/5" />
           </div>
 
-          <div className="bg-white rounded-3xl shadow p-8 flex flex-col items-center gap-10">
+          <div className="bg-white rounded-3xl md:rounded-[45px] shadow p-8 flex flex-col items-center gap-10">
             <div className="flex-1">
               <h2 className=" text-3xl md:text-6xl font-leaguespartanmedium mb-3">How To Reduce<br />Waste?</h2>
               <p className="text-sm md:text-xl text-justify leading-tight md:leading-10 font-poppinsmedium text-black">
