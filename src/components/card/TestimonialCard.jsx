@@ -16,17 +16,17 @@ const TestimonialCard = ({ quote, author, location, context, isActive }) => {
         </div>
 
         <div className="relative pt-6 mb-4">
-          <p className="text-xl sm:text-2xl text-gray-800 leading-relaxed">
+          <p className="text-xl sm:text-2xl font-poppinsmedium text-gray-800 leading-relaxed">
             {quote}
           </p>
         </div>
       </div>
 
       <div className="text-sm pt-4">
-        <p className="font-semibold text-gray-900">
+        <p className="font-poppinssemibold text-gray-900">
           {author}, {location}
         </p>
-        <p className="text-gray-500 mt-1">{context}</p>
+        <p className="text-gray-500 font-poppinsregular mt-1">{context}</p>
       </div>
     </div>
   );
