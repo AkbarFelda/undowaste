@@ -1,52 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --font-poppinsregular: PoppinsRegular;
-  --font-poppinsmedium: PoppinsMedium;
-  --font-poppinssemibold: PoppinsSemiBold;
-  --font-poppinsbold: PoppinsBold;
-  --font-poppinsextrabold: PoppinsExtraBold;
-  --font-poppinsblack: PoppinsBlack;
-  --font-leaguespartanregular: LeagueSpartanRegular;
-  --font-leaguespartanmedium: LeagueSpartanMedium;
-  --font-leaguespartansemibold: LeagueSpartanSemiBold;
-  --font-leaguespartanbold: LeagueSpartanBold;
-  --font-leaguespartanextrabold: LeagueSpartanExtraBold;
-  --font-leaguespartanblack: LeagueSpartanBlack;
-
-  --font-family: var(--font-poppinsregular), var(--font-poppinsmedium),
-    var(--font-poppinssemibold), var(--font-poppinsbold),
-    var(--font-poppinsextrabold), var(--font-poppinsblack),
-    var(--font-leaguespartanregular), var(--font-leaguespartanmedium),
-    var(--font-leaguespartansemibold), var(--font-leaguespartanbold),
-    var(--font-leaguespartanextrabold), var(--font-leaguespartanblack),
-    sans-serif;
-    
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html,
-body,
-#root {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-@theme {
-  --color-primary: #4ade80;
-  --color-secondary: #22d3ee;
-  --color-accent: #fbbf24;
-  --color-background-notfound: #015238;
-}
-
 @font-face {
   font-family: "PoppinsRegular";
   src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
@@ -83,7 +36,6 @@ body,
   font-weight: 900;
 }
 
-/* LEAGUE SPARTAN */
 @font-face {
   font-family: "LeagueSpartanRegular";
   src: url("../assets/fonts/LeagueSpartan-Regular.ttf") format("truetype");
@@ -120,11 +72,63 @@ body,
   font-weight: 900;
 }
 
+.font-poppinsregular {
+  font-family: "PoppinsRegular";
+}
+.font-poppinsmedium {
+  font-family: "PoppinsMedium";
+}
+.font-poppinssemibold {
+  font-family: "PoppinsSemiBold";
+}
+.font-poppinsbold {
+  font-family: "PoppinsBold";
+}
+.font-poppinsextrabold {
+  font-family: "PoppinsExtraBold";
+}
+.font-poppinsblack {
+  font-family: "PoppinsBlack";
+}
+
+.font-leaguespartanregular {
+  font-family: "LeagueSpartanRegular";
+}
+.font-leaguespartanmedium {
+  font-family: "LeagueSpartanMedium";
+}
+.font-leaguespartansemibold {
+  font-family: "LeagueSpartanSemiBold";
+}
+.font-leaguespartanbold {
+  font-family: "LeagueSpartanBold";
+}
+.font-leaguespartanextrabold {
+  font-family: "LeagueSpartanExtraBold";
+}
+.font-leaguespartanblack {
+  font-family: "LeagueSpartanBlack";
+}
+
+@theme {
+  --color-primary: #4ade80;
+  --color-secondary: #22d3ee;
+  --color-accent: #fbbf24;
+  --color-background-notfound: #015238;
+}
+
+
+html,body,#root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 .svg-filter {
   filter: invert(1) brightness(100%) contrast(100%);
 }
 
-/* HP: matikan background */
+/* HP */
 @media (max-width: 767px) {
   .hero-bg {
     background-image: none !important;

@@ -4,3 +4,6 @@ export { default as About } from './About';
 export { default as Content } from './Content';
 export { default as Contact } from './Contact';
 export { default as NotFound } from './NotFound'
+export { default as WasteTracker } from './WasteTracker';
+export { default as WasteCategory } from './WasteCategory';
+export { default as WasteInsight } from './WasteInsight';

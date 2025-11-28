@@ -40,11 +40,11 @@ const JoinCommunitySection = ({
 
   return (
     <div className="py-10  content-center text-center">
-      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-black">
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-leaguespartanmedium mb-6 text-black">
         Siap Menjadi Bagian Dari Perubahan?
       </h1>
 
-      <p className="max-w-3xl text-base sm:text-lg lg:text-xl mb-10 text-gray-700 mx-auto">
+      <p className="max-w-3xl text-base font-leaguespartansemibold sm:text-lg lg:text-xl mb-10 text-gray-700 mx-auto">
         Bergabunglah dengan komunitas peduli lingkungan. Dapatkan informasi
         kegiatan, panduan praktis, dan kesempatan untuk beraksi nyata bersama
         kami.
@@ -58,10 +58,10 @@ const JoinCommunitySection = ({
         </div>
 
         <div className="flex flex-col ml-6">
-          <p className="text-6xl font-extrabold text-gray-900 leading-none">
+          <p className="text-6xl font-leaguespartansemibold text-gray-900 leading-none">
             {memberCount}
           </p>
-          <p className="text-sm text-gray-600">Orang Sudah Bergabung</p>
+          <p className="text-sm font-leaguespartanregular text-gray-600">Orang Sudah Bergabung</p>
         </div>
 
         <div className="flex -space-x-4 ml-6">
@@ -73,7 +73,7 @@ const JoinCommunitySection = ({
 
       <button
         onClick={onButtonClick}
-        className="bg-black contne text-white px-12 py-4 rounded-2xl font-semibold text-lg hover:bg-gray-800 transition-colors shadow-lg"
+        className="bg-black contne text-white px-12 py-4 rounded-4xl ffont-leaguespartanregular text-lg hover:bg-gray-800 transition-colors shadow-lg"
       >
         Segera Gabung Komunitas
       </button>

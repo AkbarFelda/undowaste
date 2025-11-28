@@ -24,12 +24,12 @@ const WasteTypeCard = ({ icon: Icon, title, description, className = "" }) => {
       </div>
 
 
-      <h1 className="text-xl sm:text-2xl font-primary font-medium text-gray-900 mb-3 leading-tight">
+      <h1 className="text-xl sm:text-2xl font-leaguespartanmedium text-gray-900 mb-3 leading-tight">
         {titleLines[0]} <br />
         {titleLines.slice(1).join(" ")}
       </h1>
 
-      <p className="text-sm text-black text-center font-secondary leading-relaxed max-w-[200px]">
+      <p className="text-sm text-black text-center font-poppinsmedium leading-relaxed max-w-[200px]">
         {description}
       </p>
     </div>

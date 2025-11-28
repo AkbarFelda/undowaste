@@ -94,7 +94,7 @@ const TestimonialSlider = () => {
 
     return (
         <div className="relative overflow-hidden py-12">
-            <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
+            <h2 className="text-3xl font-poppinsmedium text-center mb-10 text-gray-900">
                 Apa Kata Mereka?
             </h2>
             <div
