@@ -25,6 +25,9 @@ import Detergent from './images/detergent.svg';
 import Hape from './images/hape.svg';
 import Kursi from './images/kursi.svg';
 import Tong from './images/tong.svg';
+import Glass from './images/glass.svg';
+import Lamp from './images/lamp.svg';
+import Question from './images/question.svg';
 
 //icon
 import LeafIcon from './icons/leaf.svg';
@@ -76,5 +79,8 @@ export {
   Detergent,
   Hape,
   Kursi,
-  Tong
+  Tong,
+  Glass,
+  Lamp,
+  Question
 };
