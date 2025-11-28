@@ -61,7 +61,7 @@ const WasteTracker = () => {
                     />
             </div>
 
-            <div className="bg-white shadow-md rounded-[45px]">
+            <div className="bg-white shadow-md rounded-3xl md:rounded-[45px]">
                 <div className="w-full">
                     <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.49131650807!2d106.6647043584382!3d-6.229720928695747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1764249267531!5m2!1sen!2sid"
@@ -70,7 +70,7 @@ const WasteTracker = () => {
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="w-full rounded-[45px] shadow-md"
+                    className="w-full rounded-3xl md:rounded-[45px] shadow-md"
                     ></iframe>
                 </div>
 
@@ -81,7 +81,7 @@ const WasteTracker = () => {
                 </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-[45px] p-10">
+            <div className="bg-white shadow-md rounded-3xl md:rounded-[45px] p-10">
                     <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Waste Category Distribution</h2>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-10">
@@ -107,7 +107,7 @@ const WasteTracker = () => {
                     </div>
             </div>
 
-            <div className="bg-white shadow-md rounded-[45px] p-10">
+            <div className="bg-white shadow-md rounded-3xl md:rounded-[45px] p-10">
                 <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Weekly Waste</h2>
 
                 <Bar data={barData} />

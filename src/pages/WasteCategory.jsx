@@ -39,7 +39,7 @@ const WasteCategory = () => {
                 />
                 <div className="w-full md:w-1/3">
                     <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4 leading-tight">
-                        Waste <br /> Tracker
+                        Waste <br /> Category
                     </h1>
                     <p className="mt-4 text-black font-poppinsmedium">
                         Jangan hanya membuang, saat nya melacak! Saksikan langsung peta aliran limbah mu, sekaligus liat data category limbah terbanyak!
@@ -51,7 +51,7 @@ const WasteCategory = () => {
                 {sections.map((item, idx) => (
                     <div
                     key={idx}
-                    className="bg-white rounded-3xl shadow px-6 md:px-10 pt-8 flex flex-col md:flex-row md:items-start gap-6"
+                    className="bg-white rounded-3xl md:rounded-[45px] shadow px-6 md:px-10 pt-8 flex flex-col md:flex-row md:items-start gap-6"
                     >
                     <div className="flex-1 lg:mt-3">
                         <h2 className="text-2xl md:text-3xl font-leaguespartanmedium text-black mb-4">
@@ -76,7 +76,7 @@ const WasteCategory = () => {
             </div>
 
 
-            <div className="bg-white shadow-md rounded-[45px] p-10">
+            <div className="bg-white shadow-md rounded-3xl md:rounded-[45px] p-10">
                 <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Waste Generation</h2>
               <Line data={lineData} />
             </div>
