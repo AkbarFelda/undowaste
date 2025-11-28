@@ -23,14 +23,28 @@ const WasteTracker = () => {
 
   const barData = {
     labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+
     datasets: [
-      {
-        data: [20, 15, 35, 25],
-        backgroundColor: ["#D9D9D9", "#D9D9D9", "#93B890", "#D9D9D9"],
+        {
+        label: "Organik",
+        data: [12, 10, 20, 25],
+        backgroundColor: "#93B890",
         borderRadius: 500,
-      },
+        },
+        {
+        label: "Anorganik",
+        data: [6, 20, 10, 15],
+        backgroundColor: "#D9D9D9",
+        borderRadius: 500,
+        },
+        {
+        label: "B3",
+        data: [2, 10, 5, 30],
+        backgroundColor: "#F4A261",
+        borderRadius: 500,
+        },
     ],
-  };
+    };
 
   return (
     <>
@@ -110,8 +124,31 @@ const WasteTracker = () => {
 
                 <div className="bg-white shadow-md rounded-3xl md:rounded-[45px] p-10">
                     <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Weekly Waste</h2>
-
-                    <Bar data={barData} />
+                    <div className="h-70 md:h-120 lg:h-170">
+                        <Bar 
+                            data={barData}
+                            options={{
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                    legend: {
+                                        position: "top",
+                                        labels: {
+                                        font: { size: 14 },
+                                        },
+                                    },
+                                },
+                                scales: {
+                                    x: {
+                                        stacked: false,
+                                    },
+                                    y: {
+                                        beginAtZero: true,
+                                    },
+                                },
+                            }}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
