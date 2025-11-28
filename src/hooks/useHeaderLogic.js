@@ -12,6 +12,11 @@ export function useHeaderLogic() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
+  const handleJoinClick = () => {
+    window.open(
+      "https://chat.whatsapp.com/HxzzkSXHZNo8vjWHKYfGN6",
+    );
+  }
   const handleToggle = () => setIsOpen(prev => !prev);
   const handleClose = () => setIsOpen(false);
 
@@ -20,6 +25,7 @@ export function useHeaderLogic() {
     location, 
     navLinks, 
     handleToggle, 
-    handleClose 
+    handleClose, 
+    handleJoinClick
   };
 }
