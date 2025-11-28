@@ -33,7 +33,7 @@ function Landing() {
     <>
       <Header isLanding={true} />
       <div className="flex flex-col items-center justify-center min-h-screen bg-white">
-        <div className="min-h-full py-12 lg:py-10 lg:ml-15 lg:mr-16 relative">
+        <div className="min-h-full py-12 lg:py-10 lg:ml-12 lg:mr-16 relative">
           <div className="flex flex-col md:flex-row gap-10 items-start w-full relative z-10">
             <div className="text-center md:text-left order-2 md:order-1 w-full md:w-3/5 self-start">
               <h1 className="text-4xl sm:text-4xl sm:ml-4 lg:text-7xl font-extrabold font-primary text-black mb-6 leading-tight">
