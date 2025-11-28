@@ -41,7 +41,7 @@ export default function ExploreCard() {
         <div
           key={index}
           onClick={item.onClick}
-          className="lg:pt-12 lg:pl-8 relative bg-white rounded-[50px] shadow-md p-6 h-75 md:h-90 lg:h-150 w-3/5 lg:w-full md:w-full overflow-hidden cursor-pointer"
+          className="lg:pt-12 lg:pl-8 relative bg-white rounded-3xl md:rounded-[50px] shadow-md p-6 h-75 md:h-90 lg:h-150 w-3/5 lg:w-full md:w-full overflow-hidden cursor-pointer"
         >
           <h1 className="text-2xl lg:text-4xl font-leaguespartanmedium text-black">
             {item.title}
