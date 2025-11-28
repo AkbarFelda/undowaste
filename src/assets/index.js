@@ -19,6 +19,7 @@ import Map from './images/map.svg';
 import Earth from './images/earth.svg';
 import TrueReality from './images/true-reality.png'
 import Boxes from './images/boxes.svg';
+import Phone from './images/phone.svg';
 
 //icon
 import LeafIcon from './icons/leaf.svg';
@@ -64,5 +65,6 @@ export {
   Map,
   Earth,
   TrueReality,
-  Boxes
+  Boxes,
+  Phone
 };
