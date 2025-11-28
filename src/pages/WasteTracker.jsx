@@ -40,8 +40,8 @@ const WasteTracker = () => {
               ←
             </button>
 
-            <div className="px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
-                <div className="w-1/3">
+            <div className="md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div className="w-full md:w-1/3">
                     <h1 className="text-5xl LeagueSpartanSemiBold text-black leading-tight">
                         Waste <br /> Tracker
                     </h1>
@@ -50,7 +50,15 @@ const WasteTracker = () => {
                     </p>
                 </div>
 
-                <img src={Map} alt="Map Illustration" className="w-72 md:w-1/2" />
+                <img
+                    src={Map}
+                    alt="Map Illustration"
+                    className="
+                        absolute top-33 right-15
+                        md:static md:top-auto md:right-auto 
+                        w-35 md:w-72 lg:w-1/2
+                    "
+                    />
             </div>
 
             <div className="bg-white shadow-md rounded-[45px]">
