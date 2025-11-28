@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { handleChangeForm, handleSubmitForm } from "../utils/contactHandlers";
+import { SuccessModal } from "../components";
 
 function Contact() {
   const [form, setForm] = useState({
@@ -7,6 +8,17 @@ function Contact() {
     email: "",
     message: "",
   });
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+  
+  const openModal = () => {
+    console.log("Modal harusnya BUKA sekarang!"); // <--- TAMBAHKAN INI
+    setIsModalOpen(true);
+  };
   return (
     <div className="relative z-10 py-12 lg:py-10 lg:ml-15 lg:mr-16 md:ml-4">
       <div className="flex flex-col md:flex-row gap-8 lg:gap-28 ">
@@ -18,14 +30,14 @@ function Contact() {
           </h1>
 
           <p className="p-2 text-black font-poppinsmedium text-lg sm:text-lg mb-10 max-w-lg  mx-auto md:mx-0">
-            Hubungi tim support kami melalui email atau form di samping.
-            Kami siap membantu dan akan membalas secepatnya.
+            Hubungi tim support kami melalui email atau form di samping. Kami
+            siap membantu dan akan membalas secepatnya.
           </p>
         </div>
 
         <div className="flex-1 ml-0 md:ml-12 lg:ml-80">
           <form
-            onSubmit={handleSubmitForm(form, setForm)}
+            onSubmit={handleSubmitForm(form, setForm, openModal)}
             className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-sm"
           >
             <div className="mb-4">
@@ -103,8 +115,8 @@ function Contact() {
           className="w-full rounded-lg shadow-md"
         ></iframe>
       </div>
+      <SuccessModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
-    
   );
 }
 
