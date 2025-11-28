@@ -37,7 +37,7 @@ Pastikan Anda telah menginstal lingkungan pengembangan Node.js (disarankan versi
 1.  **Clone Repositori:**
 
     ```bash
-    git clone https://github.com/AkbarFelda/webdesign_SK3D_technoversary25
+    git clone https://github.com/AkbarFelda/webdesign_SK3D_technoversary25.git
     cd webdesign_SK3D_technoversary25
     ```
 
