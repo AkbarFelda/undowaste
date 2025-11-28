@@ -20,7 +20,7 @@ function NotFound() {
         alt="404 Not Found"
         className="z-10 w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl" 
       />
-      <h1 className="text-lg sm:text-xl md:text-2xl font-secondary font-bold text-white z-10 max-w-md">
+      <h1 className="text-lg sm:text-xl md:text-2xl font-poppinsbold text-white z-10 max-w-md">
         Oops! Halaman Ini Ikut Tersesat dalam Tumpukan Limbah.
       </h1>
       <BackButton />
