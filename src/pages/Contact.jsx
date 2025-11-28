@@ -11,13 +11,13 @@ function Contact() {
     <div className="relative z-10 py-12 lg:py-10 lg:ml-15 lg:mr-16 md:ml-4">
       <div className="flex flex-col md:flex-row gap-8 lg:gap-28 ">
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-5xl sm:text-6xl lg:text-8xl font-semibold font-primary text-black mb-4 leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4 leading-tight">
             Contact
             <br />
             Support
           </h1>
 
-          <p className="p-2 text-black font-medium text-lg sm:text-lg mb-10 max-w-lg font-secondary mx-auto md:mx-0">
+          <p className="p-2 text-black font-poppinsmedium text-lg sm:text-lg mb-10 max-w-lg  mx-auto md:mx-0">
             Hubungi tim support kami melalui email atau form di samping.
             Kami siap membantu dan akan membalas secepatnya.
           </p>
@@ -30,7 +30,7 @@ function Contact() {
           >
             <div className="mb-4">
               <label
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm font-poppinssemibold mb-2"
                 htmlFor="name"
               >
                 Nama
@@ -42,13 +42,13 @@ function Contact() {
                 type="text"
                 onChange={handleChangeForm(form, setForm)}
                 placeholder="Masukkan nama Anda"
-                className="w-full py-3 px-4 rounded-lg shadow focus:outline-none text-black"
+                className="w-full py-3 px-4 rounded-lg shadow focus:outline-none font-poppinsregular text-black"
               />
             </div>
 
             <div className="mb-4">
               <label
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm font-poppinssemibold mb-2"
                 htmlFor="email"
               >
                 Email
@@ -60,13 +60,13 @@ function Contact() {
                 onChange={handleChangeForm(form, setForm)}
                 type="email"
                 placeholder="Masukkan email Anda"
-                className="w-full py-3 px-4 rounded-lg shadow focus:outline-none text-black"
+                className="w-full py-3 px-4 rounded-lg shadow focus:outline-none font-poppinsregular text-black"
               />
             </div>
 
             <div className="mb-6">
               <label
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm font-poppinssemibold mb-2"
                 htmlFor="message"
               >
                 Pesan
@@ -78,13 +78,13 @@ function Contact() {
                 onChange={handleChangeForm(form, setForm)}
                 rows="4"
                 placeholder="Tulis pesan Anda di sini"
-                className="w-full py-3 px-4 rounded-lg shadow focus:outline-none text-black"
+                className="w-full py-3 px-4 rounded-lg shadow focus:outline-none font-poppinsregular text-black"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="bg-black text-white font-medium font-secondary py-3 px-4 rounded-lg w-full hover:opacity-80 transition"
+              className="bg-black text-white font-poppinsmedium py-3 px-4 rounded-lg w-full hover:opacity-80 transition"
             >
               Kirim Sekarang
             </button>
