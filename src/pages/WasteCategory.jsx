@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../layout/Footer";
 import { TrashWaste, Daun, Detergent, Hape, Kursi, Tong, BottleHalf } from "../assets";
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend,} from 'chart.js';
 import { Line } from 'react-chartjs-2';
@@ -23,6 +24,7 @@ const WasteCategory = () => {
     };
     
   return (
+    <>
     <div className="flex flex-col min-h-screen bg-white">
         <div className="relative z-10 py-12 px-4 md:px-8 lg:px-16 gap-12 flex flex-col">
             <button onClick={() => navigate(-1)} className="text-2xl text-black items-start flex">
@@ -80,6 +82,8 @@ const WasteCategory = () => {
             </div>
         </div>
     </div>
+    <Footer />
+    </>
   );
 }
 
