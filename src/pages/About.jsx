@@ -7,7 +7,7 @@ import { Magnifier } from '../assets';
 
 function About() {
   return (
-    <div className="relative z-10 py-12 px-4 md:px-8 lg:px-16 gap-12 flex flex-col">
+    <div className="relative z-10 py-12 px-4 md:px-8 lg:px-16 gap-12 flex flex-col container mx-auto justify-between items-center">
         <div className='text-center md:text-left w-full self-start flex flex-col md:flex-row items-center'>
           <div>
             <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4 leading-tight">
@@ -26,7 +26,7 @@ function About() {
           />
         </div>
 
-        <div className="flex flex-col items-center relative md:flex-row bg-[#F6F8F9] rounded-[50px] justify-between w-full">
+        <div className="flex flex-col items-center relative md:flex-row bg-[#F6F8F9] rounded-3xl md:rounded-[50px] justify-between w-full">
                   <img
                     src={Magnifier}
                     alt="ImageHero"
@@ -64,43 +64,43 @@ function About() {
                 </div>
         </div>
 
-        <h2 className="text-3xl font-leaguespartanmedium text-black mb-2 mt-5 justify-center flex md:mt-30 md:mb-15">Hal yang Kami Utamakan</h2>
+        <h2 className="text-3xl font-leaguespartanmedium text-black mt-5 justify-center flex md:mt-30 mb-2 md:mb-7 lg:mb-15">Hal yang Kami Utamakan</h2>
         <div className="flex flex-col gap-12 md:gap-25 items-center w-full relative justify-center">
-          <div className="flex flex-col gap-0 md:gap-30 items-center w-full relative justify-center md:flex-row md:justify-between">
+          <div className="flex flex-col gap-0 md:gap-15 lg:gap-30 items-center w-full relative justify-center md:flex-row md:justify-between">
             <img
               src={Kolaborasi}
               alt="ImageHero"
               className="w-full max-w-24 p-6 md:p-0 md:ml-0 md:mr-0 mb-0"
             />
-            <div className='flex flex-col w-full gap-2 md:gap-8 mt-0'>
+            <div className='flex flex-col w-full gap-2 md:gap-8 mt-0 items-center md:items-start'>
               <h3 className='font-poppinssemibold text-black text-2xl md:text-4xl'>Kolaborasi</h3>
-              <p className='font-poppinsmedium text-black text-sm md:text-xl'>
+              <p className='font-poppinsmedium text-black text-sm md:text-xl text-center md:text-justify'>
                 Kami percaya sinergi antara individu, komunitas, pemerintah, dan sektor swasta adalah kunci untuk menciptakan dampak yang luas dan berkelanjutan
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-0 md:gap-30 items-center w-full relative justify-center md:flex-row md:justify-between">
+          <div className="flex flex-col gap-0 md:gap-15 lg:gap-30 items-center w-full relative justify-center md:flex-row md:justify-between">
             <img
               src={Edukasi}
               alt="ImageHero"
               className="w-full max-w-24 p-6 md:p-0 md:ml-0 md:mr-0 mb-0"
             />
-            <div className='flex flex-col w-full gap-2 md:gap-8 mt-0'>
+            <div className='flex flex-col w-full gap-2 md:gap-8 mt-0 items-center md:items-start'>
               <h3 className='font-poppinssemibold text-black text-2xl md:text-4xl'>Edukasi</h3>
-              <p className='font-poppinsmedium text-black text-sm md:text-xl'>
+              <p className='font-poppinsmedium text-black text-sm md:text-xl text-center md:text-justify'>
                 Kami berkomitmen menyediakan edukasi lingkungan yang mudah diakses agar setiap pengguna mengetahui cara pilah sampah yang benar dan dampak positifnya.
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-0 md:gap-30 items-center w-full relative justify-center md:flex-row md:justify-between">
+          <div className="flex flex-col gap-0 md:gap-15 lg:gap-30 items-center w-full relative justify-center md:flex-row md:justify-between">
             <img
               src={Keberlanjutan}
               alt="ImageHero"
               className="w-full max-w-24 p-6 md:p-0 md:ml-0 md:mr-0 mb-0"
             />
-            <div className='flex flex-col w-full gap-2 md:gap-8 mt-0'>
+            <div className='flex flex-col w-full gap-2 md:gap-8 mt-0 items-center md:items-start'>
               <h3 className='font-poppinssemibold text-black text-2xl md:text-4xl'>Keberlanjutan</h3>
-              <p className='font-poppinsmedium text-black text-sm md:text-xl'>
+              <p className='font-poppinsmedium text-black text-sm md:text-xl text-center md:text-justify'>
                 Kami bertujuan memastikan keberlanjutan lingkungan melalui solusi digital yang dapat mengurangi volume limbah dan mendorong praktik zero-waste lifestyle jangka panjang.
               </p>
             </div>

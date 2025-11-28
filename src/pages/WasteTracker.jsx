@@ -35,53 +35,54 @@ const WasteTracker = () => {
   return (
     <>
       <div className="flex flex-col min-h-screen bg-white">
-        <div className="relative z-10 py-12 px-4 md:px-8 lg:px-16 gap-12 flex flex-col">
-            <button onClick={() => navigate(-1)} className="text-2xl text-black items-start flex">
-              ←
-            </button>
+        <div className="flex-1 container mx-auto">
+            <div className="relative z-10 py-12 px-4 md:px-8 lg:px-16 gap-12 flex flex-col">
+                <button onClick={() => navigate(-1)} className="text-2xl text-black items-start flex">
+                ←
+                </button>
 
-            <div className="md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
-                <div className="w-full md:w-1/3">
-                    <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4 leading-tight">
-                        Waste <br /> Tracker
-                    </h1>
-                    <p className="mt-4 text-black font-poppinsmedium">
-                        Jangan hanya membuang, saat nya melacak! Saksikan langsung peta aliran limbah mu, sekaligus liat data category limbah terbanyak!
-                    </p>
+                <div className="md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div className="w-full md:w-1/3">
+                        <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4 leading-tight">
+                            Waste <br /> Tracker
+                        </h1>
+                        <p className="mt-4 text-black font-poppinsmedium">
+                            Jangan hanya membuang, saat nya melacak! Saksikan langsung peta aliran limbah mu, sekaligus liat data category limbah terbanyak!
+                        </p>
+                    </div>
+
+                    <img
+                        src={Map}
+                        alt="Map Illustration"
+                        className="
+                            absolute top-33 right-15
+                            md:static md:top-auto md:right-auto 
+                            w-35 md:w-72 lg:w-1/2
+                        "
+                        />
                 </div>
 
-                <img
-                    src={Map}
-                    alt="Map Illustration"
-                    className="
-                        absolute top-33 right-15
-                        md:static md:top-auto md:right-auto 
-                        w-35 md:w-72 lg:w-1/2
-                    "
-                    />
-            </div>
+                <div className="bg-white shadow-md rounded-3xl md:rounded-[45px]">
+                    <div className="w-full">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.49131650807!2d106.6647043584382!3d-6.229720928695747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1764249267531!5m2!1sen!2sid"
+                        height="450"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="w-full rounded-3xl md:rounded-[45px] shadow-md"
+                        ></iframe>
+                    </div>
 
-            <div className="bg-white shadow-md rounded-3xl md:rounded-[45px]">
-                <div className="w-full">
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.49131650807!2d106.6647043584382!3d-6.229720928695747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1764249267531!5m2!1sen!2sid"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="w-full rounded-3xl md:rounded-[45px] shadow-md"
-                    ></iframe>
+                    <div className="flex items-center justify-center gap-6 my-8">
+                        {["bg-[#71B469]", "bg-[#63ABD2]", "bg-[#655C5C]", "bg-[#DBBB3A]", "bg-[#EA755E]"].map((color, i) => (
+                        <span key={i} className={`w-5 h-5 rounded-full ${color}`}></span>
+                        ))}
+                    </div>
                 </div>
 
-                <div className="flex items-center justify-center gap-6 my-8">
-                    {["bg-[#71B469]", "bg-[#63ABD2]", "bg-[#655C5C]", "bg-[#DBBB3A]", "bg-[#EA755E]"].map((color, i) => (
-                    <span key={i} className={`w-5 h-5 rounded-full ${color}`}></span>
-                    ))}
-                </div>
-            </div>
-
-            <div className="bg-white shadow-md rounded-3xl md:rounded-[45px] p-10">
+                <div className="bg-white shadow-md rounded-3xl md:rounded-[45px] p-10">
                     <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Waste Category Distribution</h2>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-10">
@@ -105,12 +106,13 @@ const WasteTracker = () => {
                             <li><span className="inline-block w-4 h-4 bg-[#EA755E] mr-2"></span> Limbah Pertambangan</li>
                         </ul>
                     </div>
-            </div>
+                </div>
 
-            <div className="bg-white shadow-md rounded-3xl md:rounded-[45px] p-10">
-                <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Weekly Waste</h2>
+                <div className="bg-white shadow-md rounded-3xl md:rounded-[45px] p-10">
+                    <h2 className="text-center font-leaguespartanmedium text-4xl text-black mb-6">Weekly Waste</h2>
 
-                <Bar data={barData} />
+                    <Bar data={barData} />
+                </div>
             </div>
         </div>
       </div>

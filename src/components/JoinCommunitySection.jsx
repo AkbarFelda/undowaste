@@ -50,7 +50,7 @@ const JoinCommunitySection = ({
         kami.
       </p>
 
-      <div className="flex items-center justify-center mb-10">
+      <div className="flex items-center justify-center mb-4">
         <div className="flex -space-x-4">
           {firstGroup.map((src, index) =>
             renderAvatar(src, `profil-${index + 1}`, index)

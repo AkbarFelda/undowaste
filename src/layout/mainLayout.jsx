@@ -7,7 +7,7 @@ function MainLayout() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
-      <main className="flex-1 container">
+      <main className="flex-1 container mx-auto">
           <Outlet />
       </main>
       <Footer />

@@ -27,17 +27,17 @@ function Home() {
   };
   return (
     <>
-      <div className="relative z-10 py-12 lg:py-10 lg:ml-8 lg:mr-16 md:ml-8">
+      <div className="relative z-10 py-12 lg:py-10 lg:ml-8 lg:mr-16 md:ml-8 md:mr-5">
         <div
           className="hero-bg bg-no-repeat relative flex items-center "
           style={{
             backgroundImage: `url(${HomeHero})`,
             backgroundPosition: "calc(50% + 250px) bottom",
-            backgroundSize: "70%",
+            backgroundSize: "75%",
           }}
         >
-          <div className="relative z-10  max-w-4xl text-center px-8 lg:text-left md:text-left">
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4 leading-tight">
+          <div className="relative z-10  max-w-4xl text-center lg:px-8 lg:text-left md:text-left">
+            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-leaguespartansemibold text-black mb-4  leading-tight">
               Undo Your
               <br />
               Waste
@@ -141,7 +141,7 @@ function Home() {
               />
             </div>
           </div>
-          <div className="py-16 px-4">
+          <div className="py-5 px-4">
             <JoinCommunitySection
               profileImages={profileImages}
               memberCount="100+"
